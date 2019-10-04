@@ -1,0 +1,8 @@
+Question 1:
+
+
+SQL Query:
+
+SELECT CarMaker, CarModel, Sum (TotalSalePrice) from Carsales
+where DATE_ADD(NOW(), INTERVAL -30 DAY)
+GROUPBY CarMaker, CarModel
